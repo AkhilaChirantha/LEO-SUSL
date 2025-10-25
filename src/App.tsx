@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename="/LEO-SUSL">
 
       <Routes>
         <Route path="/" element={<LandingPage />} />

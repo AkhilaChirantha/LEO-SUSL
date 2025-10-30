@@ -5,7 +5,7 @@ export default function BottomNavbar() {
 
   const navigate = useNavigate();
   return (
-   <section className="w-full h-auto ">
+   <section className="w-full h-auto bg-[#ffffff]">
         <div className="flex flex-col lg:flex-row justify-between items-between gap-2 px-4 lg:pl-20 lg:pr-20 py-5">
 
             <div className="w-full lg:w-auto items-start">

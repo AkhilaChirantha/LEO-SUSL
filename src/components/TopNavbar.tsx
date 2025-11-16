@@ -1,22 +1,29 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";  // ✅ Add this
 import Logo from "/logo.png";
 
 function TopNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
 
-  // ✅ Handle screen resize for responsiveness
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 991);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const links = ["Home", "About Us", "Projects", "Contact"];
+  // ✅ Updated links with paths
+  const links = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+  ];
 
   return (
     <>
       <div className="relative p-4 md:px-10 flex items-center justify-between">
+        
         {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 md:w-16 md:h-16">
@@ -28,22 +35,27 @@ function TopNavbar() {
           </div>
         </div>
 
-        {/* Desktop Links */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <div
-              key={link}
+            <Link
+              key={link.name}
+              to={link.path}
               className="text-white hover:text-pink-400 cursor-pointer transition-colors"
             >
-              {link}
-            </div>
+              {link.name}
+            </Link>
           ))}
-          <button className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] px-5 py-2 text-white">
+
+          <Link
+            to="/contact"
+            className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] px-5 py-2 text-white"
+          >
             Get In Touch
-          </button>
+          </Link>
         </div>
 
-        {/* Hamburger Menu for Mobile */}
+        {/* Mobile Hamburger */}
         <div className="md:hidden flex items-center">
           <button onClick={() => setMenuOpen(!menuOpen)}>
             <img
@@ -58,25 +70,33 @@ function TopNavbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile menu */}
         {menuOpen && isMobile && (
           <div className="absolute top-full left-0 w-full bg-black/80 flex flex-col items-start px-4 py-4 gap-3 z-20">
+
             {links.map((link) => (
-              <div
-                key={link}
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={() => setMenuOpen(false)} // close menu after click
                 className="text-white w-full py-2 px-2 rounded hover:bg-pink-600 cursor-pointer"
               >
-                {link}
-              </div>
+                {link.name}
+              </Link>
             ))}
-            <button className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] w-full py-2 text-white">
+
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] w-full py-2 text-white"
+            >
               Get In Touch
-            </button>
+            </Link>
           </div>
         )}
       </div>
 
-      {/* ✅ Centered Underline (90% width) */}
+      {/* underline */}
       <div className="w-[90%] mx-auto h-[1px] bg-white/70" />
     </>
   );

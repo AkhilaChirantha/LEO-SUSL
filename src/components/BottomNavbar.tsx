@@ -26,10 +26,10 @@ export default function BottomNavbar() {
                 <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/about')}>
                   <div className="text-[14px] font-light text-[#767474]">ABOUT US</div>
                 </div>
-                <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/service')}>
-                  <div className="text-[14px] font-light text-[#767474]">EVENTS</div>
+                <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/projects')}>
+                  <div className="text-[14px] font-light text-[#767474]">Projects</div>
                 </div>
-                <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/market')}>
+                <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/contact')}>
                   <div className="text-[14px] font-light text-[#767474]">CONTACT</div>
                 </div>
               </div>

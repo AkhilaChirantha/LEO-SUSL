@@ -27,7 +27,7 @@ export default function BottomNavbar() {
                   <div className="text-[14px] font-light text-[#767474]">ABOUT US</div>
                 </div>
                 <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/projects')}>
-                  <div className="text-[14px] font-light text-[#767474]">Projects</div>
+                  <div className="text-[14px] font-light text-[#767474]">PROJECTS</div>
                 </div>
                 <div className="flex items-center gap-3 hover:text-[#DC1F5F] cursor-pointer" onClick={() => navigate('/contact')}>
                   <div className="text-[14px] font-light text-[#767474]">CONTACT</div>

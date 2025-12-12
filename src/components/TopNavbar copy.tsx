@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";  // ✅ Add this
 import Logo from "/logo.png";
 
-function TopNavbar() {
+function TopNavbarBlack() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
 
@@ -31,7 +31,7 @@ function TopNavbar() {
           <div className="w-10 h-10 md:w-16 md:h-16">
             <img src={Logo} alt="Logo" className="w-full h-full object-contain" />
           </div>
-          <div className="text-white font-bold text-[12px] md:text-[12px] xl:text-lg leading-tight">
+          <div className="text-black font-bold text-[12px] md:text-[12px] xl:text-lg leading-tight">
             LEO CLUB <br />
             Sabaragamuwa University of Sri Lanka
           </div>
@@ -43,7 +43,7 @@ function TopNavbar() {
             <Link
               key={link.name}
               to={link.path}
-              className="text-white hover:text-pink-400 cursor-pointer transition-colors text-[12px] lg:text-base text-center"
+              className="text-black hover:text-pink-400 cursor-pointer transition-colors text-[12px] lg:text-base text-center"
             >
               {link.name}
             </Link>
@@ -63,8 +63,8 @@ function TopNavbar() {
             <img
               src={
                 menuOpen
-                  ? "https://img.icons8.com/?size=100&id=83149&format=png&color=ffffff"
-                  : "https://img.icons8.com/?size=100&id=83195&format=png&color=ffffff"
+                  ? "https://img.icons8.com/?size=100&id=83149&format=png&color=000000"
+                  : "https://img.icons8.com/?size=100&id=83195&format=png&color=000000"
               }
               alt="menu"
               className="w-6 h-6 cursor-pointer"
@@ -99,9 +99,9 @@ function TopNavbar() {
       </div>
 
       {/* underline */}
-      <div className="w-[90%] mx-auto h-[1px] bg-white/70" />
+      <div className="w-[90%] mx-auto h-[1px] bg-black/70" />
     </>
   );
 }
 
-export default TopNavbar;
+export default TopNavbarBlack;

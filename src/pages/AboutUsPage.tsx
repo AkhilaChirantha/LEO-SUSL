@@ -131,19 +131,19 @@ function AboutUsPage() {
 
     </section>
 
-    <section className='relative w-full h-auto flex flex-col md:flex-row  mt-[60px] mb-[100px] gap-[80px]'>
-      <div className='flex flex-col items-start px-[20px] md:px-[100px]'>
-        <div className='text-[30px] md:text-[40px] max-w-[130px] leading-snug'>OUR STORY</div>
-        <div className='w-[160px] h-[2px] md:w-[180px] md:h-[4px] bg-[#DC1F5F] mt-[15px] md:mt-[30px]'/>
-        <div className='md:max-w-[580px] text-justify mt-[16px]'>Our charter was more than just paperwork - it was a promise. A promise to serve those who needed it most, to develop leaders who would shape tomorrow, and to create a legacy that would outlive our university years. With the support of our sponsoring Lions Club and the blessing of Sabaragamuwa University administration, LEO Club SUSL was born with a clear mission: to empower communities while empowering ourselves.</div>
-        <div className='md:max-w-[580px] text-justify mt-[16px]'>It all started with a group of passionate students at Sabaragamuwa University who believed that education without service was incomplete. In [Year], inspired by the global LEO movement and driven by an unwavering commitment to community development, these visionary young minds came together to establish what would become one of the most impactful student organisations on campus.</div>
+    <section className='relative w-full h-auto flex flex-col lg:flex-row  mt-[60px] mb-[80px] lg:mb-[0] xl:mb-[100px] gap-5 xl:gap-[80px]'>
+      <div className='flex flex-col lg:items-start px-[20px] lg:px-[30px] xl:px-[100px]'>
+        <div className='text-[30px] md:text-[40px] xl:max-w-[130px] leading-snug'>OUR STORY</div>
+        <div className='w-[160px] h-[2px] xl:w-[180px] md:h-[4px] bg-[#DC1F5F] mt-[15px] md:mt-[30px]'/>
+        <div className='xl:max-w-[580px] text-justify mt-[16px]'>Our charter was more than just paperwork - it was a promise. A promise to serve those who needed it most, to develop leaders who would shape tomorrow, and to create a legacy that would outlive our university years. With the support of our sponsoring Lions Club and the blessing of Sabaragamuwa University administration, LEO Club SUSL was born with a clear mission: to empower communities while empowering ourselves.</div>
+        <div className='xl:max-w-[580px] text-justify mt-[16px]'>It all started with a group of passionate students at Sabaragamuwa University who believed that education without service was incomplete. In [Year], inspired by the global LEO movement and driven by an unwavering commitment to community development, these visionary young minds came together to establish what would become one of the most impactful student organisations on campus.</div>
       </div>
       <div className="flex-1 flex justify-center relative">
 
-          <div  className="hidden md:block absolute bg-[#DC1F5F] z-0 lg:w-[200px] lg:h-[200px] "
+          <div  className="hidden xl:block absolute bg-[#DC1F5F] z-0 xl:w-[200px] lg:h-[200px] "
             style={{ width: '200px', height: '200px', bottom: '-14px', left: '78px' }}/>
 
-          <div  className="hidden md:block absolute bg-[#DC1F5F] z-0 lg:w-[200px] lg:h-[200px] "
+          <div  className="hidden xl:block absolute bg-[#DC1F5F] z-0 xl:w-[200px] lg:h-[200px] "
             style={{ width: '200px', height: '200px', top: '-14px', right: '78px' }}/>
 
           <img  src={About2}  alt=""  className="w-[380px] h-[500px] object-cover relative z-10"  />
@@ -154,12 +154,12 @@ function AboutUsPage() {
     <section className='relative w-full h-auto flex flex-col  mb-[60px] '>
       <div className="text-[10px] text-[#DC1F5F] font-semibold tracking-widest text-center">OUR TEAM</div>
         <div className="text-[20px] md:text-[24px] font-bold mt-2 text-gray-800 text-center">Behind the Screens</div>
-        <div className="px-4 md:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">
+        <div className="px-4 xl:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">
           We are passionate students from diverse faculties united by one vision: creating positive change in our communities. Our leadership team combines fresh perspectives with proven commitment, leading by example while empowering every member to discover their potential for service.
         </div>
 
 
-        <div className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 mt-[60px] gap-[60px] px-[80px] md:px-[100px] '>
+        <div className='grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 mt-[60px] gap-[60px] px-[20px] md:px-[100px] '>
 
           {teamMembers.map((person, index) => (
             <div key={index} className='flex flex-col'>
@@ -167,10 +167,10 @@ function AboutUsPage() {
               <img 
                 src={person.image} 
                 alt={person.name} 
-                className='w-[240px] h-[240px] object-cover rounded-[10px]'
+                className='xl:w-[240px] xl:h-[240px] object-cover rounded-[10px]'
               />
 
-              <div className='text-[20px] mt-[20px]'>{person.name}</div>
+              <div className='xl:text-[20px] mt-[20px]'>{person.name}</div>
               <div className=''>{person.role}</div>
 
               {/* Social Media Icons */}

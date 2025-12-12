@@ -98,7 +98,7 @@ function LandingPage() {
           </div>
 
           {/* Bottom Info Section — only visible on large screens */}
-          <div className="hidden md:flex flex-col absolute bottom-[-290px] left-1/2 -translate-x-1/2 w-[90%] z-10">
+          <div className="hidden lg:flex flex-col absolute bottom-[-200px] xl:bottom-[-290px] left-1/2 -translate-x-1/2 w-[90%] z-10">
             <div className="w-full h-[1px] bg-white/70 mb-6" />
 
             {/* Info Points */}
@@ -144,7 +144,7 @@ function LandingPage() {
       <section className="relative flex flex-col items-center pb-[80px] px-4">
         <div className="text-[20px] md:text-[24px] text-center">Empowering Change Through Leadership and Service</div>
         <div className="w-[20%] md:w-[10%] mx-auto h-[2px] " style={{ boxShadow: "0 3px 4px 0 rgba(0, 0, 0, 0.25)" , background: "rgba(220, 31, 95, 0.60)" }}/>
-        <div className="px-4 md:px-[240px] text-[14px] md:text-[16px] text-center pt-[28px]" style={{color:"rgba(0, 0, 0, 0.40)"}}>At the LEO Club of Sabaragamuwa University of Sri Lanka, we strive to create positive change through community service, leadership, and teamwork. Together, we inspire young leaders to make a lasting impact in society.</div>
+        <div className="px-4 xl:px-[240px] text-[14px] md:text-[16px] text-center pt-[28px]" style={{color:"rgba(0, 0, 0, 0.40)"}}>At the LEO Club of Sabaragamuwa University of Sri Lanka, we strive to create positive change through community service, leadership, and teamwork. Together, we inspire young leaders to make a lasting impact in society.</div>
 
 
         <div className="flex flex-col lg:flex-row pt-[80px] w-full max-w-6xl mx-auto gap-8 lg:gap-12 items-center">
@@ -152,7 +152,7 @@ function LandingPage() {
           <div className="flex-1 w-full">
             
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-8 lg:gap-20 mb-12">
+            <div className="grid grid-cols-2 gap-8 lg:gap-20 mb-12 pl-[100px] md:pl-[200px] lg:pl-[50px] xl:pl-0">
 
               <div className="text-center flex flex-col items-start gap-[20px] lg:gap-[40px] border-l-[4px] h-[100px] lg:h-[130px] border-[#DC1F5F]">
                 <div className="text-2xl lg:text-4xl font-bold pl-[20px]">150+</div>
@@ -181,7 +181,7 @@ function LandingPage() {
           {/* Right side - Image */}
           <div className="flex-1 flex justify-center relative">
 
-          <div  className="hidden md:block absolute bg-[#DC1F5F] z-0 lg:w-[380px] lg:h-[430px] lg:right-[44px]"
+          <div  className="hidden xl:block absolute bg-[#DC1F5F] z-0 lg:w-[380px] lg:h-[430px] lg:right-[44px]"
             style={{ width: '280px', height: '330px', bottom: '-20px', right: '44px' }}/>
           <img 
             src={Girl} 
@@ -197,7 +197,7 @@ function LandingPage() {
         <div className="text-[10px] text-[#DC1F5F] font-semibold tracking-widest">LEADERSHIP</div>
         <div className="text-[20px] md:text-[24px] font-bold mt-2 text-gray-800 text-center">Global Leaders Inspiring Local Change</div>
         <div className="w-[60px] h-[2px] bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] mt-3 mb-4"></div>
-        <div className="px-4 md:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">
+        <div className="px-4 xl:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">
           Meet the visionary leaders who guide the LEO movement worldwide. Their dedication, innovation, and leadership inspire millions of young volunteers to serve communities, promote unity, and create meaningful global impact.
         </div>
 
@@ -304,7 +304,7 @@ function LandingPage() {
         {/* Background image - hidden on mobile */}
         <div className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat rounded-[20px]" style={{backgroundImage: `url(${BgImage})`}} />
         
-        <div className="relative md:absolute inset-1 bg-white md:top-[280px] mx-0 md:mx-[70px] rounded-[20px] h-auto md:h-[334px] flex flex-col items-center justify-center px-[20px] md:px-[100px] py-8" >
+        <div className="relative md:absolute inset-1 bg-white md:top-[280px] mx-0 md:mx-[70px] rounded-[20px] h-auto md:h-[334px] flex flex-col items-center justify-center px-[20px] mxl:px-[100px] py-8" >
           <div className="text-[22px] ">What We Are Doing Now</div>
           <div className="text-[14px] md:text-[16px] text-justify pt-[20px]">The LEO Club of Sabaragamuwa University of Sri Lanka is actively engaged in various impactful projects that serve our communities and build leadership among youth. From environmental cleanups, blood donation campaigns, educational workshops, and mental health awareness programs, we work together to make a real difference. Every initiative reflects our passion for service, teamwork, and positive change, empowering young leaders to take action and inspire others across Sri Lanka and beyond.</div>
            <div className="mt-12 md:mt-6 flex flex-col md:flex-row gap-4 w-full md:w-auto">
@@ -323,7 +323,7 @@ function LandingPage() {
       <section className="relative flex flex-col items-center pb-[80px] px-4">
         <div className="text-[10px] text-[#DC1F5F] font-semibold tracking-widest">Why US</div>
         <div className="text-[20px] md:text-[24px] font-bold mt-2 text-gray-800">Our Core Values</div>
-        <div className="px-4 md:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">At the LEO Club of Sabaragamuwa University of Sri Lanka, our actions are guided by a strong set of values that shape who we are and how we serve. These principles reflect our commitment to leadership, service, and personal growth - helping us create lasting impact in our university and communities beyond. </div>
+        <div className="px-4 xl:px-[240px] text-[14px] md:text-[16px] text-center pt-[20px] text-gray-600 leading-relaxed">At the LEO Club of Sabaragamuwa University of Sri Lanka, our actions are guided by a strong set of values that shape who we are and how we serve. These principles reflect our commitment to leadership, service, and personal growth - helping us create lasting impact in our university and communities beyond. </div>
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 pt-[60px] px-4 md:px-[100px] max-w-6xl">
@@ -492,14 +492,14 @@ function LandingPage() {
               </div>
 
               {/* Textual content inside the white box area */}
-              <div className="md:pr-[40px] md:pl-[60px] flex flex-col items-center md:items-start justify-end mt-8 md:mt-0">
-                <div className="md:mt-14 lg:mt-20 text-[18px] md:text-[22px] font-semibold text-gray-800 text-center md:text-left w-full md:w-[380px]">
+              <div className="md:pr-[40px] md:pl-[60px] flex flex-col items-center xl:items-start justify-end mt-8 md:mt-0">
+                <div className="md:mt-14 lg:mt-20 text-[18px] md:text-[22px] font-semibold text-gray-800 text-center xl:text-left w-full xl:w-[380px]">
                   {testimonials[currentTestimonial].title}
                 </div>
-                <p className="mt-5 text-gray-600 leading-relaxed text-[12px] md:text-[12px] text-justify">
+                <p className="mt-5 text-gray-600 leading-relaxed text-[12px] xl:text-[12px] text-justify">
                   {testimonials[currentTestimonial].description}
                 </p>
-                <div className="mt-8 text-center md:text-left">
+                <div className="mt-8 text-center xl:text-left">
                   <div className="font-semibold text-gray-800">{testimonials[currentTestimonial].name}</div>
                   <div className="text-sm text-gray-500">{testimonials[currentTestimonial].role}</div>
                 </div>

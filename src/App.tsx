@@ -6,6 +6,7 @@ import ProjectPage from "./pages/ProjectPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/ScrollToTop";
 import MagazinePage from "./pages/MagazinePage";
+import GalleryPage from "./pages/GalleryPage";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<ProjectPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/magazine" element={<MagazinePage/>} />
+        <Route path="/gallery" element={<GalleryPage/>} />
       </Routes>
 
     </Router>

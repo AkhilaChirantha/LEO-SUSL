@@ -18,7 +18,7 @@ function TopNavbarBlack() {
     { name: "About Us", path: "/about" },
     { name: "Projects", path: "/projects" },
     { name: "Magazines", path: "/magazine" },
-    { name: "Gallery", path: "/projects" },
+    { name: "Gallery", path: "/gallery" },
     { name: "Contact", path: "/contact" },
   ];
 

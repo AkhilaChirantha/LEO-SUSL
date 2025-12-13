@@ -17,7 +17,7 @@ function TopNavbar() {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Magazines", path: "/projects" },
+    { name: "Magazines", path: "/magazine" },
     { name: "Gallery", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];

@@ -8,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import MagazinePage from "./pages/MagazinePage";
 import GalleryPage from "./pages/GalleryPage";
 import ProjectView from "./pages/ProjectView";
+import MembershipForm from "./pages/MembershipForm";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/magazine" element={<MagazinePage/>} />
         <Route path="/gallery" element={<GalleryPage/>} />
         <Route path="/project-view" element={<ProjectView/>} />
+        <Route path="/membrship" element={<MembershipForm/>} />
       </Routes>
 
     </Router>

@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Logo from "/logo.png";
 
 export default function MembershipForm() {
+
+    const navigate = useNavigate();
+
   return (
     <>
     <div className="w-full h-[80px] md:h-[100px] bg-[#DC1F5F]/60 flex lg:gap-[225px] items-center justify-center md:gap-[40px] lg:justify-start">
@@ -122,7 +126,7 @@ export default function MembershipForm() {
         </div>
 
        <div className="flex flex-col md:flex-row gap-[10px] md:gap-[20px] mt-[20px] md:mt-[40px]">
-            <button className=" bg-[#D1CFCD] text-white w-full h-[30px] text-[12px] md:w-[200px] md:h-[50px] rounded-[5px] md:text-[16px] hover:bg-[#969593] transition-colors duration-300 cursor-pointer">Cancel</button> 
+            <button className=" bg-[#D1CFCD] text-white w-full h-[30px] text-[12px] md:w-[200px] md:h-[50px] rounded-[5px] md:text-[16px] hover:bg-[#969593] transition-colors duration-300 cursor-pointer" onClick={()=> navigate('/')}>Cancel</button> 
             <button className=" bg-[#DC1F5F] text-white w-full h-[30px] text-[12px] md:w-[200px] md:h-[50px] rounded-[5px] md:text-[16px] hover:bg-[#b71c4a] transition-colors duration-300 cursor-pointer">Send Message</button> 
        </div> 
 

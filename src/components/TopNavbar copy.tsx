@@ -50,7 +50,7 @@ function TopNavbarBlack() {
           ))}
 
           <Link
-            to="/contact"
+            to="/membrship"
             className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] px-5 py-2 text-white text-base md:text-[10px] lg:text-base md:w-full lg:w-auto flex justify-center items-center"
           >
             Get In Touch
@@ -88,7 +88,7 @@ function TopNavbarBlack() {
             ))}
 
             <Link
-              to="/contact"
+              to="/membrship"
               onClick={() => setMenuOpen(false)}
               className="bg-gradient-to-r from-[#DC1F5F] to-[#FF9BBD] rounded-[5px] w-full px-[10px] py-2 text-white"
             >

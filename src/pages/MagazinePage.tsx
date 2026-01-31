@@ -1,8 +1,16 @@
 import TopNavbarBlack from "../components/TopNavbar copy";
 import BgImage from '../assets/AboutMain.jpg'
 import BottomNavbar from "../components/BottomNavbar";
+import { useSEO } from "../hooks/useSEO";
 
 export default function MagazinePage() {
+
+    useSEO({
+        title: "Magazine | SUSL LEO Club Publications & Articles",
+        description:
+            "Read SUSL LEO Club magazines and publications featuring our events, projects, stories, and achievements at Sabaragamuwa University.",
+    });
+
   return (
     <>
       <div className="bg-white">

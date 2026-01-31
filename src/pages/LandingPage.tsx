@@ -3,8 +3,16 @@ import BottomNavbar from "../components/BottomNavbar";
 import BgImage from "../assets/LandingBG.png";
 import Girl from "../assets/HeroGirl.jpg";
 import { useState } from "react";
+import { useSEO } from "../hooks/useSEO";
 
 function LandingPage() {
+
+  useSEO({
+    title: "SUSL LEO Club | Projects, Events & Magazines – SUSL",
+    description:
+      "Official SUSL LEO Club website featuring our projects, events, activities and magazines at Sabaragamuwa University of Sri Lanka.",
+  });
+
   // Array of different icons for each info point
   const infoIcons: string[] = [
     "https://img.icons8.com/?size=100&id=97nxa8FRHkyw&format=png&color=ffffff", 

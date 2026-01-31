@@ -1,7 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import Logo from "/logo.png";
+import { useSEO } from "../hooks/useSEO";
 
 export default function MembershipForm() {
+
+    useSEO({
+        title: "Membership | Join SUSL LEO Club – SUSL",
+        description:
+            "Join SUSL LEO Club and become part of a community of student leaders. Submit your membership details and start your service journey.",
+    });
+
 
     const navigate = useNavigate();
 

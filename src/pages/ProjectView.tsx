@@ -1,8 +1,16 @@
 import TopNavbarBlack from "../components/TopNavbar copy";
 import BgImage from '../assets/AboutMain.jpg'
 import BottomNavbar from "../components/BottomNavbar";
+import { useSEO } from "../hooks/useSEO";
 
 export default function ProjectView() {
+
+    useSEO({
+        title: "Project Details | SUSL LEO Club",
+        description:
+            "View project details, objectives, photos and impact updates from SUSL LEO Club community and university initiatives.",
+    });
+
   return (
     <>
       <section className="relative flex flex-col min-h-screen">

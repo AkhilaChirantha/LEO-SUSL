@@ -1,8 +1,17 @@
 import TopNavbarBlack from "../components/TopNavbar copy";
 import BgImage from '../assets/AboutMain.jpg'
 import BottomNavbar from "../components/BottomNavbar";
+import { useSEO } from "../hooks/useSEO";
 
 export default function GalleryPage() {
+
+  useSEO({
+    title: "Gallery | SUSL LEO Club Photos & Highlights",
+    description:
+      "Browse photos and highlights from SUSL LEO Club projects, events, and memorable moments at Sabaragamuwa University of Sri Lanka.",
+  });
+
+
   return (
     <div className="bg-white">
       <section className="relative min-h-screen flex flex-col bg-cover bg-center bg-no-repeat md:bg-none md:bg-transparent bg-[url('https://img.freepik.com/premium-photo/colorful-curve-frame-template-design-element_53876-1024352.jpg?semt=ais_hybrid&w=740&q=80')]">

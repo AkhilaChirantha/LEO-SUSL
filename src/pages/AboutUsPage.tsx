@@ -3,10 +3,18 @@ import BgImage from '../assets/AboutMain.jpg'
 import About2 from '../assets/About2.jpg'
 import Girl from "../assets/HeroGirl.jpg";
 import BottomNavbar from '../components/BottomNavbar';
+import { useSEO } from '../hooks/useSEO';
 
 
 
 function AboutUsPage() {
+
+
+  useSEO({
+    title: "About | SUSL LEO Club – Sabaragamuwa University",
+    description:
+      "Learn about SUSL LEO Club, our mission, vision, our story and our team of Sabaragamuwa University of Sri Lanka.",
+  });
 
   const teamMembers = [
   {

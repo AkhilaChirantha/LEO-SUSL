@@ -1,8 +1,16 @@
 import TopNavbarBlack from "../components/TopNavbar copy"
 import BgImage from '../assets/AboutMain.jpg'
 import BottomNavbar from "../components/BottomNavbar"
+import { useSEO } from "../hooks/useSEO";
 
 function ProjectPage() {
+
+  useSEO({
+    title: "Projects | SUSL LEO Club – Community & University Initiatives",
+    description:
+      "Explore community service and university initiatives organized by SUSL LEO Club, including impact programs, volunteering and leadership projects.",
+  });
+
   return (
     <>
     <div className="bg-white">

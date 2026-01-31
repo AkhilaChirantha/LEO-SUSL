@@ -1,8 +1,16 @@
 import TopNavbarBlack from "../components/TopNavbar copy"
 import BgImage from "../assets/Contact.jpg";
 import BottomNavbar from "../components/BottomNavbar";
+import { useSEO } from "../hooks/useSEO";
 
 function ContactPage() {
+
+  useSEO({
+    title: "Contact | SUSL LEO Club – Feedback & Inquiries",
+    description:
+      "Contact SUSL LEO Club for collaborations, memberships, project information, and event updates. Reach our team at Sabaragamuwa University.",
+  });
+
   return (
     <>
 

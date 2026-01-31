@@ -9,6 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LEO Club Sabaragamuwa University of Sri Lanka</title>
 
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get("p");
+        if (p) {
+          window.history.replaceState(null, "", decodeURIComponent(p));
+        }
+      })();
+    </script>
+
     <style>
       body {font-family: 'Inria Serif', serif;}
     </style>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA redirect (for project site)
+      // Redirect /LEO-SUSL/anything -> /LEO-SUSL/?p=/LEO-SUSL/anything
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+
+      window.location.replace(
+        "/LEO-SUSL/?p=" + encodeURIComponent(path + search + hash)
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

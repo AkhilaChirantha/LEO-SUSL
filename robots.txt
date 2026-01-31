@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akhilachirantha.github.io/LEO-SUSL/sitemap.xml
